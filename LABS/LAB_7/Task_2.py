@@ -17,10 +17,10 @@ Button = pygame.Surface((173, 173))
 SONG_END = pygame.USEREVENT + 1
 
 pygame.mixer.music.set_endevent(SONG_END)
-pygame.mixer.music.load('C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/its safe now.mp3')
+pygame.mixer.music.load('C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/its-safe-now.wav')
 pygame.mixer.music.play()
 
-_songs = ['C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/its safe now.mp3', 'C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/Hotline Miami 2_ Wrong Number Soundtrack - Acid Spit.mp3']
+_songs = ['C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/its-safe-now.wav', 'C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/music/Acid-Spit.wav']
 _currently_playing_song = None
 
 def play_next_song():

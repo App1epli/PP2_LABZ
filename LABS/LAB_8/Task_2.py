@@ -124,9 +124,7 @@ while True :
             if event.key == pygame.K_RIGHT :
                 change_to = 'RIGHT'
 
-    # Если две клавиши нажаты одновременно
-    # мы не хотим, чтобы змея разделялась на две
-    # направлений одновременно
+
     if change_to == 'UP' and direction != 'DOWN' :
         direction = 'UP'
     if change_to == 'DOWN' and direction != 'UP' :

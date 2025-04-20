@@ -15,7 +15,7 @@ def get_image(path):
         _image_library[canonicalized_path] = image
     return image
 
-def blitRotate(screen , img , pos , angle):
+def Rotate(screen , img , pos , angle):
     rotated_img = pygame.transform.rotate(img , angle)
     new_rect = rotated_img.get_rect(center = img.get_rect(center = pos).center)
 
@@ -46,8 +46,8 @@ while not done :
     pos = (screen.get_width()/2 , screen.get_height()/2 )
     screen.blit( bg , (0,0) )
 
-    blitRotate(screen , get_image("C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/img/leftarm.png") , pos ,angle_sec )
-    blitRotate(screen , get_image("C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/img/rightarm.png"), pos , angle_min)
-    angle_min = -6*minutes-53
+    Rotate(screen , get_image("C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/img/leftarm.png") , pos ,angle_sec )
+    Rotate(screen , get_image("C:/Users/Admin/Documents/PP_2_labs/LABS/LAB_7/img/rightarm.png"), pos , angle_min)
+    angle_min = -6*minutes-50
     angle_sec = -6*seconds
     pygame.display.flip()
